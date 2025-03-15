@@ -1,0 +1,63 @@
+.support {
+  padding-block: 86px 83px;
+  background-color: #F8F8F8;
+  box-sizing: border-box;
+
+  &__title {
+    font: 450 34px/1 'SuisseIntlRegular', sans-serif;
+    margin-block-end: 38px;
+    color: $title-color;
+
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('/become-partner/images/icons/support-decoration-icon.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 72px;
+      height: 48px;
+      margin-block-end: 27px;
+    }
+  }
+
+  &__text {
+    font: 300 18px/1 'SuisseIntlLight', sans-serif;
+    color: $text-color;
+
+    &:first-child {
+      margin-block-end: 34px;
+    }
+  }
+
+  &__highlight {
+    font: 700 18px/1 'SuisseIntlBold', sans-serif;
+    color: $text-color;
+  }
+
+  &__list {
+    list-style: none;
+    margin-block-end: 34px
+  }
+
+  &__list-item {
+    position: relative;
+    font: 300 18px/1 'SuisseIntlLight', sans-serif;
+    color: $text-color;
+    max-width: 270px;
+    margin-block-end: 20px;
+    padding-inline-start: 29px;
+    box-sizing: border-box;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url("/become-partner/images/icons/geren-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 10px;
+      height: 15px;
+      left: 0;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@mixin transition($transitions...) {
+  $default-duration: .3s;
+  $default-timing-function: ease-in-out;
+
+  $full-transitions: ();
+
+  @each $transition in $transitions {
+    $property: nth($transition, 1);
+    $duration: if(length($transition) > 1, nth($transition, 2), $default-duration);
+    $timing-function: if(length($transition) > 2, nth($transition, 3), $default-timing-function);
+    $delay: if(length($transition) > 3, nth($transition, 4), null);
+
+    $full-transition: $property $duration $timing-function;
+    @if $delay {
+      $full-transition: $full-transition $delay;
+    }
+
+    $full-transitions: append($full-transitions, $full-transition, comma);
+  }
+
+  transition: $full-transitions;
+}

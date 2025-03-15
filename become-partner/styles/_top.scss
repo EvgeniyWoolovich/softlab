@@ -1,0 +1,50 @@
+@import 'transition.scss';
+
+.top {
+  background-color: $default-background-color;
+  padding-block-start: 42px;
+  padding-block-end: 88px;
+  background-image: url("/become-partner/images/backgrounds/top-background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  &__title {
+    font: 450 33px/1 'SuisseIntlRegular', 'sans-serif';
+    text-align: center;
+    color: #FFFFFF;
+    margin-block-end: 32px;
+
+    &_green {
+      color: #5ED76A;
+    }
+  }
+
+  &__text {
+    font: 300 18px/1 'SuisseIntlLight', 'sans-serif';
+    text-align: center;
+    color: #FFFFFF;
+    margin-block-end: 29px;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    @include transition(background-color);
+    font: 400 18px/1 'SuisseIntlRegular', 'sans-serif';
+    color: $text-color;
+    background-color: $green-button-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    padding-block: 23px;
+    padding-inline:  54px;
+
+    &:hover {
+      background-color: $green-button-color-hover;
+    }
+  }
+}

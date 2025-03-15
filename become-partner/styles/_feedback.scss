@@ -1,0 +1,71 @@
+@import "./container";
+
+.feedback {
+  background-color: #F8F8F8;
+  padding-block-start: 73px;
+
+  &__person {
+    display: flex;
+    align-items: center;
+    margin-block-end: 34px;
+  }
+
+  &__picture {
+    margin-inline-end: 30px;
+  }
+
+  &__name {
+    font: 600 34px/1 'SuisseIntlSemiBold', sans-serif;
+  }
+
+  &__info {
+    margin-block-end: 34px;
+  }
+
+  &__text {
+    font: 300 18px/1 'SuisseIntlLight', sans-serif;
+    color: $text-color;
+    margin-block-end: 24px;
+  }
+
+  &__link {
+    display: block;
+    font: 600 18px/1 'SuisseIntlBlod', sans-serif;
+    color: $text-color;
+    text-decoration: none;
+    margin-block-end: 10px;
+
+    &:last-child {
+      margin-block-end: 72px;
+    }
+
+    &_underline {
+      font: 300 18px/1 'SuisseIntlLight', sans-serif;
+      color: $text-color;
+      text-decoration: underline;
+      margin-block-end: 20px;
+    }
+  }
+
+  &__form-wrapper {
+    $double-padding: 2 * $container-padding-inline;
+
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding-block-start: 41px;
+    max-width: clamp($container-min-width + $double-padding, 100%, $container-max-width + $double-padding);
+    padding-inline: $container-padding-inline;
+  }
+
+  &__title {
+    font: 600 24px/1 'SuisseIntlSemiBold', sans-serif;
+    max-width: 250px;
+    margin-block-end: 22px;
+  }
+
+  &__form {
+    max-width: 300px;
+    min-height: 355px;
+    background-color: gray;
+  }
+}

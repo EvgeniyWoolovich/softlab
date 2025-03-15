@@ -1,0 +1,10 @@
+@import './vars';
+
+.container {
+  $double-padding: 2 * $container-padding-inline;
+
+  box-sizing: border-box;
+  max-width: clamp($container-min-width + $double-padding, 100%, $container-max-width + $double-padding);
+  margin-inline: auto;
+  padding-inline: $container-padding-inline;
+}

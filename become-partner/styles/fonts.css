@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "SuisseIntlLight";
+  src: url("../fonts/SuisseIntlLight.otf");
+}
+@font-face {
+  font-family: "SuisseIntlRegular";
+  src: url("../fonts/SuisseIntlRegular.otf");
+}
+@font-face {
+  font-family: "SuisseIntlMedium";
+  src: url("../fonts/SuisseIntlMedium.otf");
+}
+@font-face {
+  font-family: "SuisseIntlSemiBold";
+  src: url("../fonts/SuisseIntlSemiBold.otf");
+}
+@font-face {
+  font-family: "SuisseIntlBold";
+  src: url("../fonts/SuisseIntlBold.otf");
+}
+
+/*# sourceMappingURL=fonts.css.map */

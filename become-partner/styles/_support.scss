@@ -18,6 +18,17 @@
       height: 48px;
       margin-block-end: 27px;
     }
+
+    @media (min-width: 768px) {
+      font-weight: 600;
+      font-size: 32px;
+      margin-block-end: 38px;
+    }
+
+    // @media (min-width: 769px) {
+    //   font: 600 32px/1 'SuisseIntlRegular', sans-serif;
+    //   margin-block-end: 38px;
+    // }
   }
 
   &__text {
@@ -43,7 +54,6 @@
     position: relative;
     font: 300 18px/1 'SuisseIntlLight', sans-serif;
     color: $text-color;
-    max-width: 270px;
     margin-block-end: 20px;
     padding-inline-start: 29px;
     box-sizing: border-box;
@@ -58,6 +68,15 @@
       height: 15px;
       left: 0;
       top: 0;
+    }
+
+    @media (max-width: 370px) {
+      min-width: 270px;
+    }
+
+    @media (min-width: 768px) {
+      min-width: 600px;
+      margin-inline-start: 82px;
     }
   }
 }

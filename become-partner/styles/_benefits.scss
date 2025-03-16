@@ -7,11 +7,30 @@ $icon-list: ('discount', 'deal', 'team', 'education');
   &__items {
     display: flex;
     flex-direction: column;
-    row-gap: 62px;
+    row-gap: 50px;
+
+    @media (min-width: 768px) {
+      position: relative;
+      border: 1px solid #DFDFDF;
+      border-radius: 30px;
+      box-shadow: 0 5px 10px 0 #0000001F;
+      background-color: #FFF;
+      margin-inline: 14px;
+	  	margin-block-start: -91px;
+			padding-inline: 75px 74px;
+			padding-block: 56px 67px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			column-gap: 90px;
+    }
   }
 
   &__item {
     max-width: 290px;
+
+		@media (min-width: 768px) {
+			max-width: 223px;
+		}
   }
 
   &__icon {
@@ -29,12 +48,26 @@ $icon-list: ('discount', 'deal', 'team', 'education');
 
   &__title {
     font: 600 24px/1 'SuisseIntlSemiBold', sans-serif;
+		max-width: 264px;
+		max-height: 28px;
     color: $text-color;
-    margin-block-end: 20px;
+    margin-block-end: 13px;
+
+		@media (min-width: 768px) {
+			max-width: 200px;
+			max-height: 56px;
+			margin-block-end: 13px;
+		}
   }
 
   &__text {
     font: 300 18px/1 'SuisseIntlLight', sans-serif;
+		max-width: 289px;
+
+		@media (min-width: 768px) {
+			max-width: 219px;
+			max-height: 78px;
+		}
   }
 
 }

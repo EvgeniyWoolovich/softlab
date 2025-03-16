@@ -24,11 +24,25 @@
   background-size: contain;
   background-position: bottom;
 }
+@media (min-width: 590px) {
+  .top {
+    background-image: url("/become-partner/images/backgrounds/top-background-table.png");
+  }
+}
 .top__title {
   font: 450 33px/1 "SuisseIntlRegular", "sans-serif";
   text-align: center;
   color: #FFFFFF;
-  margin-block-end: 32px;
+  margin-block-end: 21px;
+}
+@media (min-width: 768px) {
+  .top__title {
+    font-size: 56px;
+    margin-block-end: 32px;
+    max-width: 728px;
+    max-height: 232px;
+    padding-inline: 95px;
+  }
 }
 .top__title_green {
   color: #5ED76A;
@@ -65,10 +79,32 @@
 .benefits__items {
   display: flex;
   flex-direction: column;
-  row-gap: 62px;
+  row-gap: 50px;
+}
+@media (min-width: 768px) {
+  .benefits__items {
+    position: relative;
+    border: 1px solid #DFDFDF;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1215686275);
+    background-color: #FFF;
+    margin-inline: 14px;
+    margin-block-start: -91px;
+    padding-inline: 75px 74px;
+    padding-block: 56px 67px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 90px;
+         column-gap: 90px;
+  }
 }
 .benefits__item {
   max-width: 290px;
+}
+@media (min-width: 768px) {
+  .benefits__item {
+    max-width: 223px;
+  }
 }
 .benefits__icon {
   display: block;
@@ -90,16 +126,29 @@
 }
 .benefits__title {
   font: 600 24px/1 "SuisseIntlSemiBold", sans-serif;
+  max-width: 264px;
+  max-height: 28px;
   color: #2b2b2b;
-  margin-block-end: 20px;
+  margin-block-end: 13px;
+}
+@media (min-width: 768px) {
+  .benefits__title {
+    max-width: 200px;
+    max-height: 56px;
+    margin-block-end: 13px;
+  }
 }
 .benefits__text {
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
+  max-width: 289px;
+}
+@media (min-width: 768px) {
+  .benefits__text {
+    max-width: 219px;
+    max-height: 78px;
+  }
 }
 
-.variants {
-  margin-block-end: 70px;
-}
 .variants__title {
   font: 450 33px/1 "SuisseIntlMedium", sans-serif;
   margin-block-end: 31px;
@@ -108,35 +157,14 @@
   list-style: none;
 }
 .variants__item {
-  box-sizing: border-box;
   background-color: #f8f8f8;
   border-radius: 20px;
   padding-block: 32px 51px;
-  padding-inline: 32px 20px;
-  margin-block-end: 20px;
-}
-.variants__item:last-child {
-  margin-block-end: unset;
+  padding-inline: 32px 14px;
 }
 .variants__item-title {
   font: 600 24px/1 "SuisseIntlSemiBold", "sans-serif";
   margin-block-end: 28px;
-}
-.variants__list-item {
-  font: 300 22px/1 "SuisseIntlLight", "sans-serif";
-  display: flex;
-  margin-block-end: 16px;
-  align-items: flex-start;
-}
-.variants__list-item::before {
-  display: block;
-  content: "";
-  min-width: 24px;
-  min-height: 24px;
-  background-image: url("/become-partner/images/icons/variants-decoration-icon.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-inline-end: 15px;
 }
 
 .partners-program {
@@ -208,6 +236,13 @@
   height: 48px;
   margin-block-end: 27px;
 }
+@media (min-width: 768px) {
+  .support__title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-block-end: 38px;
+  }
+}
 .support__text {
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
   color: #2b2b2b;
@@ -227,7 +262,6 @@
   position: relative;
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
   color: #2b2b2b;
-  max-width: 270px;
   margin-block-end: 20px;
   padding-inline-start: 29px;
   box-sizing: border-box;
@@ -243,6 +277,17 @@
   left: 0;
   top: 0;
 }
+@media (max-width: 370px) {
+  .support__list-item {
+    min-width: 270px;
+  }
+}
+@media (min-width: 768px) {
+  .support__list-item {
+    min-width: 600px;
+    margin-inline-start: 82px;
+  }
+}
 
 .work {
   padding-block: 78px 91px;
@@ -250,13 +295,33 @@
 }
 .work__header {
   font: 450 33px/1 "SuisseIntlRegular", sans-serif;
-  margin-block-end: 31px;
+  min-width: 312px;
+  min-height: 80px;
+  margin-block-end: 23px;
+  margin-inline-end: 24px;
   color: #2b2b2b;
+}
+@media (min-width: 768px) {
+  .work__header {
+    min-height: 114px;
+    font-size: 52px;
+    margin-block-end: 26px;
+    margin-inline-end: 195px;
+  }
 }
 .work__subheader {
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
+  margin-inline-end: 24px;
   margin-block-end: 23px;
   color: #2b2b2b;
+}
+@media (min-width: 768px) {
+  .work__subheader {
+    min-width: 634px;
+    min-height: 78px;
+    margin-inline-end: 100px;
+    margin-block-end: 47px;
+  }
 }
 .work__card-wrapper {
   list-style: none;
@@ -269,8 +334,9 @@
   border: 1px solid #DFDFDF;
   border-radius: 30px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1215686275);
-  max-width: 300px;
+  width: auto;
   margin-block-end: 20px;
+  margin-inline-end: 36px;
 }
 .work__card:last-child {
   margin-block-end: unset;
@@ -317,14 +383,32 @@
 }
 .feedback__name {
   font: 600 34px/1 "SuisseIntlSemiBold", sans-serif;
+  max-width: 163px;
 }
 .feedback__info {
+  display: flex;
+  flex-wrap: wrap;
   margin-block-end: 34px;
+}
+@media (min-width: 768px) {
+  .feedback__info {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
 }
 .feedback__text {
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
   color: #2b2b2b;
   margin-block-end: 24px;
+}
+.feedback__text:first-child {
+  max-width: 245px;
+}
+@media (min-width: 768px) {
+  .feedback__text {
+    flex-wrap: nowrap;
+    margin-inline-start: 13px;
+  }
 }
 .feedback__link {
   display: block;
@@ -342,6 +426,11 @@
   text-decoration: underline;
   margin-block-end: 20px;
 }
+@media (min-width: 768px) {
+  .feedback__link {
+    margin-inline-start: 13px;
+  }
+}
 .feedback__form-wrapper {
   background-color: #FFFFFF;
   border-radius: 30px;
@@ -349,15 +438,31 @@
   max-width: clamp(360px, 100%, 1240px);
   padding-inline: 20px;
 }
+@media (min-width: 768px) {
+  .feedback__form-wrapper {
+    margin-inline: 34px 22px;
+  }
+}
 .feedback__title {
   font: 600 24px/1 "SuisseIntlSemiBold", sans-serif;
   max-width: 250px;
   margin-block-end: 22px;
 }
+@media (min-width: 768px) {
+  .feedback__title {
+    max-width: 439px;
+    margin-inline-start: 13px;
+  }
+}
 .feedback__form {
-  max-width: 300px;
+  width: auto;
   min-height: 355px;
   background-color: gray;
+  margin-block-end: 56px;
 }
-
-/*# sourceMappingURL=index.css.map */
+@media (min-width: 768px) {
+  .feedback__form {
+    margin-block-end: 50px;
+    margin-inline: 13px;
+  }
+}/*# sourceMappingURL=index.css.map */

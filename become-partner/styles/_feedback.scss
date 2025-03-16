@@ -16,16 +16,33 @@
 
   &__name {
     font: 600 34px/1 'SuisseIntlSemiBold', sans-serif;
+    max-width: 163px;
   }
 
   &__info {
+    display: flex;
+    flex-wrap: wrap;
     margin-block-end: 34px;
+
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
   }
 
   &__text {
     font: 300 18px/1 'SuisseIntlLight', sans-serif;
     color: $text-color;
     margin-block-end: 24px;
+
+    &:first-child {
+      max-width: 245px;
+    }
+
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+      margin-inline-start: 13px;
+    }
   }
 
   &__link {
@@ -45,6 +62,10 @@
       text-decoration: underline;
       margin-block-end: 20px;
     }
+
+    @media (min-width: 768px) {
+      margin-inline-start: 13px;
+    }
   }
 
   &__form-wrapper {
@@ -55,17 +76,32 @@
     padding-block-start: 41px;
     max-width: clamp($container-min-width + $double-padding, 100%, $container-max-width + $double-padding);
     padding-inline: $container-padding-inline;
+
+    @media (min-width: 768px) {
+      margin-inline: 34px 22px;
+    }
   }
 
   &__title {
     font: 600 24px/1 'SuisseIntlSemiBold', sans-serif;
     max-width: 250px;
     margin-block-end: 22px;
+
+    @media (min-width: 768px) {
+      max-width: 439px;
+      margin-inline-start: 13px;
+    }
   }
 
   &__form {
-    max-width: 300px;
+    width: auto;
     min-height: 355px;
     background-color: gray;
+    margin-block-end: 56px;
+
+    @media (min-width: 768px) {
+      margin-block-end: 50px;
+      margin-inline: 13px;
+    }
   }
 }

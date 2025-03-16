@@ -9,11 +9,25 @@
   background-size: contain;
   background-position: bottom;
 
+  @media (min-width: 590px) {
+    background-image: url("/become-partner/images/backgrounds/top-background-table.png");
+  }
+
   &__title {
     font: 450 33px/1 'SuisseIntlRegular', 'sans-serif';
     text-align: center;
     color: #FFFFFF;
-    margin-block-end: 32px;
+    margin-block-end: 21px;
+    // max-width: 340px;
+    // max-height: 200px;
+
+    @media (min-width: 768px) {
+      font-size: 56px;
+      margin-block-end: 32px;
+      max-width: 728px;
+      max-height: 232px;
+      padding-inline: 95px;
+    }
 
     &_green {
       color: #5ED76A;

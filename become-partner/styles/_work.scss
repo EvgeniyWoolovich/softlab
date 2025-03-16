@@ -4,14 +4,32 @@
 
   &__header {
     font: 450 33px/1 'SuisseIntlRegular', sans-serif;
-    margin-block-end: 31px;
+    min-width: 312px;
+    min-height: 80px;
+    margin-block-end: 23px;
+    margin-inline-end: 24px;
     color: $title-color;
+
+    @media (min-width: 768px) {
+      min-height: 114px;
+      font-size: 52px;
+      margin-block-end: 26px;
+      margin-inline-end: 195px;
+    }
   }
 
   &__subheader {
     font: 300 18px/1 'SuisseIntlLight', sans-serif;
+    margin-inline-end: 24px;
     margin-block-end: 23px;
     color: $text-color;
+
+    @media (min-width: 768px) {
+      min-width: 634px;
+      min-height: 78px;
+      margin-inline-end: 100px;
+      margin-block-end: 47px;
+    }
   }
 
   &__card-wrapper {
@@ -26,8 +44,9 @@
     border: 1px solid #DFDFDF;
     border-radius: 30px;
     box-shadow: 0 5px 10px 0 #0000001F;
-    max-width: 300px;
+    width: auto;
     margin-block-end: 20px;
+    margin-inline-end: 36px;
 
     &:last-child {
       margin-block-end: unset;

@@ -11,7 +11,7 @@ $icon-list: ('discount', 'deal', 'team', 'education');
   }
 
   &__item {
-    max-width: 290px;
+    //max-width: 290px;
   }
 
   &__icon {
@@ -37,4 +37,35 @@ $icon-list: ('discount', 'deal', 'team', 'education');
     font: 300 18px/1 'SuisseIntlLight', sans-serif;
   }
 
+  &__br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    margin-block-end: 15px;
+
+    &__items {
+      position: relative;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-inline: 75px;
+      padding-block: 50px 67px;
+      border: 1px solid #DFDFDF;
+      border-radius: 30px;
+      top: -92px;
+      background-color: #FFFFFF;
+      box-shadow: 0 5px 10px 0 #0000001F;
+    }
+
+    &__item {
+      flex-basis: 240px;
+    }
+
+    &__br {
+      display: block;
+    }
+  }
 }

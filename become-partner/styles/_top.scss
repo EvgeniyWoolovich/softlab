@@ -4,10 +4,10 @@
   background-color: $default-background-color;
   padding-block-start: 42px;
   padding-block-end: 88px;
-  background-image: url("/become-partner/images/backgrounds/top-background-mobile.png");
+  background-image: url("/become-partner/images/backgrounds/top-background-table.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  background-size: auto 283px;
+  background-position: bottom right;
 
   &__title {
     font: 450 33px/1 'SuisseIntlRegular', 'sans-serif';
@@ -45,6 +45,22 @@
 
     &:hover {
       background-color: $green-button-color-hover;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    padding-block-start: 79px;
+    padding-block-end: 100px;
+
+    &__title {
+      font-size: 56px;
+      margin-block-end: 32px;
+    }
+
+    &__text {
+      margin-block-end: 32px;
     }
   }
 }

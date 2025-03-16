@@ -19,10 +19,10 @@
   background-color: #2b2b2b;
   padding-block-start: 42px;
   padding-block-end: 88px;
-  background-image: url("/become-partner/images/backgrounds/top-background-mobile.png");
+  background-image: url("/become-partner/images/backgrounds/top-background-table.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  background-size: auto 283px;
+  background-position: bottom right;
 }
 .top__title {
   font: 450 33px/1 "SuisseIntlRegular", "sans-serif";
@@ -58,6 +58,19 @@
   background-color: #68ee75;
 }
 
+@media screen and (min-width: 768px) {
+  .top {
+    padding-block-start: 79px;
+    padding-block-end: 100px;
+  }
+  .top__title {
+    font-size: 56px;
+    margin-block-end: 32px;
+  }
+  .top__text {
+    margin-block-end: 32px;
+  }
+}
 .benefits {
   margin-block-start: 48px;
   margin-block-end: 100px;
@@ -66,9 +79,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 62px;
-}
-.benefits__item {
-  max-width: 290px;
 }
 .benefits__icon {
   display: block;
@@ -96,7 +106,34 @@
 .benefits__text {
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
 }
+.benefits__br {
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  .benefits {
+    margin-block-end: 15px;
+  }
+  .benefits__items {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 75px;
+    padding-block: 50px 67px;
+    border: 1px solid #DFDFDF;
+    border-radius: 30px;
+    top: -92px;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1215686275);
+  }
+  .benefits__item {
+    flex-basis: 240px;
+  }
+  .benefits__br {
+    display: block;
+  }
+}
 .variants {
   margin-block-end: 70px;
 }
@@ -139,6 +176,23 @@
   margin-inline-end: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .variants {
+    margin-block-end: 100px;
+  }
+  .variants__title {
+    font-size: 45px;
+    margin-block-end: 45px;
+    text-align: center;
+  }
+  .variants__item {
+    padding-block: 33px 43px;
+    padding-inline: 40px;
+  }
+  .variants__list-item::before {
+    margin-inline-end: 19px;
+  }
+}
 .partners-program {
   background-color: #2b2b2b;
   background-image: url("/become-partner/images/backgrounds/partner-progran-background-mobile.png");
@@ -273,7 +327,6 @@
   position: relative;
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
   color: #2b2b2b;
-  max-width: 270px;
   margin-block-end: 20px;
   padding-inline-start: 29px;
   box-sizing: border-box;
@@ -290,6 +343,24 @@
   top: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .support {
+    padding-block-start: 93px;
+  }
+  .support__title {
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .support__title::before {
+    width: 87px;
+    height: 57px;
+    margin-inline-end: 28px;
+  }
+  .support__title__list {
+    padding-inline-start: 42px;
+  }
+}
 .work {
   padding-block: 78px 91px;
   box-sizing: border-box;
@@ -298,6 +369,7 @@
   font: 450 33px/1 "SuisseIntlRegular", sans-serif;
   margin-block-end: 31px;
   color: #2b2b2b;
+  max-width: 570px;
 }
 .work__subheader {
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
@@ -315,7 +387,6 @@
   border: 1px solid #DFDFDF;
   border-radius: 30px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1215686275);
-  max-width: 300px;
   margin-block-end: 20px;
 }
 .work__card:last-child {
@@ -342,6 +413,17 @@
   color: #2b2b2b;
 }
 
+@media screen and (min-width: 768px) {
+  .work__header {
+    font-size: 52px;
+  }
+  .work__subheader {
+    margin-block-end: 47px;
+  }
+  .work__title {
+    font-size: 24px;
+  }
+}
 .container {
   box-sizing: border-box;
   max-width: clamp(360px, 100%, 1240px);
@@ -362,6 +444,7 @@
   margin-inline-end: 30px;
 }
 .feedback__name {
+  max-width: 100px;
   font: 600 34px/1 "SuisseIntlSemiBold", sans-serif;
 }
 .feedback__info {
@@ -397,13 +480,144 @@
 }
 .feedback__title {
   font: 600 24px/1 "SuisseIntlSemiBold", sans-serif;
-  max-width: 250px;
   margin-block-end: 22px;
 }
 .feedback__form {
-  max-width: 300px;
   min-height: 355px;
   background-color: gray;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .feedback__person {
+    margin-inline-start: 40px;
+  }
+  .feedback__link-wrapper {
+    max-width: 245px;
+    margin-inline-end: 40px;
+  }
+  .feedback__link_underline {
+    margin-block-end: 18px;
+  }
+  .feedback__container {
+    padding-inline: 20px;
+  }
+  .feedback__form-wrapper {
+    padding-block: 50px;
+    padding-inline: 49px;
+  }
+}
+.product {
+  margin-block-end: 84px;
+}
+.product__header {
+  font: 450 33px/1 "SuisseIntlRegular";
+  margin-block-end: 43px;
+}
+.product__card-wrapper {
+  list-style: none;
+}
+.product__card {
+  padding-block: 40px;
+  border-bottom: 1px solid #DFDFDF;
+}
+.product__card:first-child {
+  border-top: 1px solid #DFDFDF;
+}
+.product__title {
+  font: 600 24px/1 "SuisseIntlSemiBold", sans-serif;
+  margin-block-end: 20px;
+  color: #2B2B2B;
+}
+.product__title_digits::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url("/become-partner/images/icons/digital-ruble.svg");
+}
+.product__title_connect::before {
+  background-image: url("/become-partner/images/icons/connect-pro.svg");
+}
+.product__title_inter-bank::before {
+  background-image: url("/become-partner/images/icons/inter-bank.svg");
+}
+.product__title_inter-bank-self::before {
+  background-image: url("/become-partner/images/icons/inter-bank-self.svg");
+}
+.product__title_inter-bank-kids::before {
+  background-image: url("/become-partner/images/icons/inter-bank-kids.svg");
+}
+.product__title_retirement-banking::before {
+  background-image: url("/become-partner/images/icons/inter-bank-kids.svg");
+}
+.product__title_islamic-banking::before {
+  background-image: url("/become-partner/images/icons/islamic-banking.svg");
+}
+.product__title_bank-v6::before {
+  background-image: url("/become-partner/images/icons/inter-bank.svg");
+}
+.product__title_data-house::before {
+  background-image: url("/become-partner/images/icons/data-house.svg");
+}
+.product__title_finmarkets::before {
+  background-image: url("/become-partner/images/icons/finmarkets.svg");
+}
+.product__title_connect::before, .product__title_digits::before, .product__title_inter-bank::before, .product__title_inter-bank-self::before, .product__title_inter-bank-kids::before, .product__title_retirement-banking::before, .product__title_islamic-banking::before, .product__title_bank-v6::before, .product__title_data-house::before, .product__title_finmarkets::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-block-end: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.product__text {
+  font: 300 18px/1 "SuisseIntlLight", sans-serif;
+  margin-block-end: 20px;
+  color: #2B2B2B;
+}
+.product__link {
+  font: 300 18px/1 "SuisseIntlLight", sans-serif;
+  color: #2B2B2B;
+  text-underline-offset: 4px;
+  display: flex;
+  align-items: center;
+}
+.product__link::after {
+  display: block;
+  content: "";
+  background-image: url("/become-partner/images/icons/gray-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-start: 6px;
+  width: 10px;
+  height: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    margin-block-end: 76px;
+  }
+  .product__header {
+    font-size: 52px;
+  }
+  .product__card {
+    padding-inline-start: 57px;
+    padding-block-end: 60px;
+  }
+  .product__title_connect, .product__title_digits, .product__title_inter-bank, .product__title_inter-bank-self, .product__title_inter-bank-kids, .product__title_retirement-banking, .product__title_islamic-banking, .product__title_bank-v6, .product__title_data-house, .product__title_finmarkets {
+    position: relative;
+  }
+  .product__title_connect::before, .product__title_digits::before, .product__title_inter-bank::before, .product__title_inter-bank-self::before, .product__title_inter-bank-kids::before, .product__title_retirement-banking::before, .product__title_islamic-banking::before, .product__title_bank-v6::before, .product__title_data-house::before, .product__title_finmarkets::before {
+    position: absolute;
+    left: -56px;
+    top: -5px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

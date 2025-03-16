@@ -15,6 +15,7 @@
   }
 
   &__name {
+    max-width: 100px;
     font: 600 34px/1 'SuisseIntlSemiBold', sans-serif;
   }
 
@@ -59,13 +60,45 @@
 
   &__title {
     font: 600 24px/1 'SuisseIntlSemiBold', sans-serif;
-    max-width: 250px;
     margin-block-end: 22px;
   }
 
   &__form {
-    max-width: 300px;
     min-height: 355px;
     background-color: gray;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feedback {
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__person {
+      margin-inline-start: 40px;
+    }
+
+    &__link-wrapper {
+      max-width: 245px;
+      margin-inline-end: 40px;
+    }
+
+    &__link {
+      &_underline {
+        margin-block-end: 18px;
+      }
+    }
+
+    &__container {
+      padding-inline: 20px;
+    }
+
+    &__form-wrapper {
+      padding-block: 50px;
+      padding-inline: 49px;
+    }
   }
 }

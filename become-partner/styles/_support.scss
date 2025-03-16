@@ -43,7 +43,6 @@
     position: relative;
     font: 300 18px/1 'SuisseIntlLight', sans-serif;
     color: $text-color;
-    max-width: 270px;
     margin-block-end: 20px;
     padding-inline-start: 29px;
     box-sizing: border-box;
@@ -58,6 +57,28 @@
       height: 15px;
       left: 0;
       top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .support {
+    padding-block-start: 93px;
+
+    &__title {
+      display: flex;
+      font-size: 32px;
+      font-weight: 600;
+
+      &::before {
+        width: 87px;
+        height: 57px;
+        margin-inline-end: 28px;
+      }
+
+      &__list {
+        padding-inline-start: 42px;
+      }
     }
   }
 }

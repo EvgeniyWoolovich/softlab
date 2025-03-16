@@ -38,6 +38,7 @@
   text-align: center;
   color: #FFFFFF;
   margin-block-end: 29px;
+  opacity: 0.5;
 }
 .top__button-container {
   display: flex;
@@ -240,6 +241,7 @@
 .partners-program__text {
   font: 300 18px/1 "SuisseIntlLight", sans-serif;
   color: #FFFFFF;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -618,6 +620,4 @@
     left: -56px;
     top: -5px;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,173 @@
+.product {
+  margin-block-end: 84px;
+
+  &__header {
+    font: 450 33px/1 'SuisseIntlRegular';
+    margin-block-end: 43px;
+  }
+
+  &__card-wrapper {
+    list-style: none;
+  }
+
+  &__card {
+    padding-block: 40px;
+    border-bottom: 1px solid #DFDFDF;
+
+    &:first-child {
+      border-top: 1px solid #DFDFDF;
+    }
+  }
+
+  &__title {
+    font: 600 24px/1 'SuisseIntlSemiBold', sans-serif;
+    margin-block-end: 20px;
+    color: #2B2B2B;
+
+    &_digits {
+      &::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        background-image: url("/become-partner/images/icons/digital-ruble.svg");
+      }
+    }
+
+    &_connect {
+      &::before {
+        background-image: url("/become-partner/images/icons/connect-pro.svg");
+      }
+    }
+
+    &_inter-bank {
+      &::before {
+        background-image: url("/become-partner/images/icons/inter-bank.svg");
+      }
+    }
+
+    &_inter-bank-self {
+      &::before {
+        background-image: url("/become-partner/images/icons/inter-bank-self.svg");
+      }
+    }
+
+    &_inter-bank-kids {
+      &::before {
+        background-image: url("/become-partner/images/icons/inter-bank-kids.svg");
+      }
+    }
+
+    &_retirement-banking {
+      &::before {
+        background-image: url("/become-partner/images/icons/inter-bank-kids.svg");
+      }
+    }
+
+    &_islamic-banking {
+      &::before {
+        background-image: url("/become-partner/images/icons/islamic-banking.svg");
+      }
+    }
+
+    &_bank-v6 {
+      &::before {
+        background-image: url("/become-partner/images/icons/inter-bank.svg");
+      }
+    }
+
+    &_data-house {
+      &::before {
+        background-image: url("/become-partner/images/icons/data-house.svg");
+      }
+    }
+
+    &_finmarkets {
+      &::before {
+        background-image: url("/become-partner/images/icons/finmarkets.svg");
+      }
+    }
+
+    &_connect,
+    &_digits,
+    &_inter-bank,
+    &_inter-bank-self,
+    &_inter-bank-kids,
+    &_retirement-banking,
+    &_islamic-banking,
+    &_bank-v6,
+    &_data-house,
+    &_finmarkets {
+      &::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin-block-end: 18px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__text {
+    font: 300 18px/1 'SuisseIntlLight', sans-serif;
+    margin-block-end: 20px;
+    color: #2B2B2B;
+  }
+
+  &__link {
+    font: 300 18px/1 'SuisseIntlLight', sans-serif;
+    color: #2B2B2B;
+    text-underline-offset: 4px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: '';
+      background-image: url("/become-partner/images/icons/gray-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-inline-start: 6px;
+      width: 10px;
+      height: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    margin-block-end: 76px;
+
+    &__header {
+      font-size: 52px;
+    }
+
+    &__card {
+      padding-inline-start: 57px;
+      padding-block-end: 60px;
+    }
+
+    &__title {
+      &_connect,
+      &_digits,
+      &_inter-bank,
+      &_inter-bank-self,
+      &_inter-bank-kids,
+      &_retirement-banking,
+      &_islamic-banking,
+      &_bank-v6,
+      &_data-house,
+      &_finmarkets {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          left: -56px;
+          top: -5px;
+        }
+      }
+    }
+  }
+}

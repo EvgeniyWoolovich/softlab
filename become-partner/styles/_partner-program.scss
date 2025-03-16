@@ -54,3 +54,59 @@
     color: #FFFFFF;
   }
 }
+
+@media  screen and (min-width: 768px){
+  .partners-program {
+    padding-block-end: 41px;
+    background-size: 360px 208px;
+
+    &__header {
+      font-size: 52px;
+      margin-block-end: 38px;
+    }
+
+    &__list {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url("/become-partner/images/icons/partner-program-decotaion.svg");
+        background-repeat: no-repeat;
+        display: block;
+        width: 48px;
+        height: 660px;
+      }
+    }
+
+    &__list-item {
+      position: relative;
+      padding-inline-start: 83px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__index {
+      border: unset;
+      margin-inline-end: 42px;
+      position: absolute;
+      padding: unset;
+      top: 22px;
+      left: 13px;
+
+      &_last {
+        top: 0;
+      }
+    }
+
+    &__text-wrapper {
+      padding-block: 19px 49px;
+
+      &_last {
+        padding-block-start: 0;
+      }
+    }
+  }
+}

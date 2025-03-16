@@ -188,6 +188,52 @@
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .partners-program {
+    padding-block-end: 41px;
+    background-size: 360px 208px;
+  }
+  .partners-program__header {
+    font-size: 52px;
+    margin-block-end: 38px;
+  }
+  .partners-program__list {
+    position: relative;
+  }
+  .partners-program__list::before {
+    position: absolute;
+    content: "";
+    background-image: url("/become-partner/images/icons/partner-program-decotaion.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 48px;
+    height: 660px;
+  }
+  .partners-program__list-item {
+    position: relative;
+    padding-inline-start: 83px;
+  }
+  .partners-program__title {
+    font-size: 24px;
+  }
+  .partners-program__index {
+    border: unset;
+    margin-inline-end: 42px;
+    position: absolute;
+    padding: unset;
+    top: 22px;
+    left: 13px;
+  }
+  .partners-program__index_last {
+    top: 0;
+  }
+  .partners-program__text-wrapper {
+    padding-block: 19px 49px;
+  }
+  .partners-program__text-wrapper_last {
+    padding-block-start: 0;
+  }
+}
 .support {
   padding-block: 86px 83px;
   background-color: #F8F8F8;

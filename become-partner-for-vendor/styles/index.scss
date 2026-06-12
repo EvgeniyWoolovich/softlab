@@ -1,0 +1,31 @@
+@import 'vars';
+@import 'transition';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  $double-padding: 2 * $container-padding-inline;
+
+  box-sizing: border-box;
+  max-width: clamp($container-min-width + $double-padding, 100%, $container-max-width + $double-padding);
+  margin-inline: auto;
+  padding-inline: $container-padding-inline;
+}
+
+@import 'top';
+@import 'benefits';
+@import 'partner';
+@import 'direction';
+@import 'projects';
+@import 'cooperation';
+@import 'our-partners';
+@import 'partner-program';
+@import 'work';
+@import 'feedback';

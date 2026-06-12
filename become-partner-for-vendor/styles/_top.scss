@@ -1,0 +1,124 @@
+.top {
+  background: $default-background-color url('/become-partner-for-vendor/images/backgrounds/top-background.png') no-repeat center left/cover;
+  padding-block: 24px calc(-14.7vw + 413px);
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding-block: 79px 100px;
+  }
+
+  @media (min-width: 1240px) {
+    background-size: 100%;
+  }
+
+  @media (min-width: 1240px) {
+    padding-block-end: 169px;
+  }
+
+  &__pretitle {
+    font: 21px/1.5 'SuisseIntlMedium', 'sans-serif';
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 24px;
+
+    &::before {
+      content: '';
+      background: url('/become-partner-for-vendor/images/icons/top-decoration-icon.png') center/contain no-repeat;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-inline-end: 10px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+
+      &::before {
+        width: 29px;
+        height: 29px;
+        margin-inline-end: 15px;
+      }
+    }
+
+    @media (min-width: 1240px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__title {
+    font: 450 44px/1.15 'SuisseIntlRegular', 'sans-serif';
+    text-align: center;
+    color: #FFFFFF;
+    margin-block-end: 26px;
+
+    @media (min-width: 768px) {
+      font-size: 56px;
+      letter-spacing: 0.4px;
+      margin-block-end: 23px;
+      max-width: 800px;
+      margin-inline: auto;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 60px;
+    }
+
+    @media (min-width: 1240px) {
+      text-align: left;
+      margin-inline-start: 0;
+      margin-block-end: 30px;
+      font-size: 64px;
+    }
+  }
+
+  &__text {
+    font: 300 14px/1.44 'SuisseIntlLight', 'sans-serif';
+    text-align: center;
+    color: #FFFFFF;
+    margin-block-end: 36px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      max-width: 654px;
+      margin-inline: auto;
+      margin-block-end: 32px;
+    }
+
+    @media (min-width: 768px) {
+      margin-block-end: 38px;
+    }
+
+    @media (min-width: 1240px) {
+      text-align: left;
+      margin-inline-start: 0;
+      max-width: 860px;
+    }
+  }
+
+  &__link {
+    @include transition(background-color);
+    box-sizing: border-box;
+    display: block;
+    max-width: 290px;
+    font: 400 18px/1 'SuisseIntlRegular', 'sans-serif';
+    text-decoration: unset;
+    color: $text-color;
+    background-color: $green-button-color;
+    border-radius: 15px;
+    padding-block: 23px;
+    padding-inline: 10px;
+    text-align: center;
+    margin-inline: auto;
+
+    &:hover {
+      background-color: $green-button-color-hover;
+    }
+
+    @media (min-width: 1240px) {
+      margin-inline-start: 0;
+      max-width: 262px;
+    }
+  }
+}

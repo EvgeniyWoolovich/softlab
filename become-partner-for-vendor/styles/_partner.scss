@@ -1,0 +1,98 @@
+.partner {
+overflow: hidden;
+
+  &__title {
+    font: 450 34px/1.2 'SuisseIntlRegular', 'sans-serif';
+    color: $title-color;
+    margin-block-end: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 46px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      margin-block-end: 32px;
+    }
+
+    @media (min-width: 1240px) {
+      font-size: 52px;
+      margin-block-end: 50px;
+    }
+  }
+
+  &__text {
+    font: 300 18px/1.44 'SuisseIntlLight', 'sans-serif';
+    color: $text-color;
+    margin-block-end: 24px;
+
+    @media (min-width: 768px) {
+      margin-block-end: 42px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-block-end: 46px;
+    }
+
+    @media (min-width: 1240px) {
+      margin-block-end: 62px;
+    }
+  }
+
+  &__brands-wrapper {
+    height: 56px;
+    position: relative;
+    margin-block-end: 33px;
+
+    @media (min-width: 768px) {
+      height: 50px;
+      margin-block-end: 63px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 58px;
+      margin-block-end: 75px;
+    }
+
+    @media (min-width: 1240px) {
+      margin-block-end: 90px;
+    }
+  }
+
+  &__brands {
+    -webkit-animation: scrollingReverse 80s linear infinite;
+    animation: scrollingReverse 80s linear infinite;
+    height: 56px;
+    position: absolute;
+    right: 0;
+    margin-inline: auto;
+    width: 992%;
+    background-image: url('/become-partner-for-vendor/images/backgrounds/brands.png');
+    background-size: contain;
+
+    @media (min-width: 768px) {
+      height: 50px;
+      -webkit-animation: scrollingReverse 180s linear infinite;
+      animation: scrollingReverse 180s linear infinite;
+    }
+
+    @media (min-width: 1024px) {
+      height: 58px;
+    }
+
+    @media (min-width: 1920px) {
+      -webkit-animation: scrollingReverse 300s linear infinite;
+      animation: scrollingReverse 300s linear infinite;
+    }
+  }
+}
+
+@keyframes scrollingReverse {
+  0% {
+    transform: translateX(10vw)
+  }
+
+  to {
+    transform: translateX(992vw)
+  }
+}

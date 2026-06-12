@@ -1,0 +1,1413 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: clamp(360px, 100%, 1240px);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.top {
+  background: #2b2b2b url("/become-partner-for-vendor/images/backgrounds/top-background.png") no-repeat center left/cover;
+  padding-block: 24px calc(-14.7vw + 413px);
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .top {
+    padding-block: 79px 100px;
+  }
+}
+@media (min-width: 1240px) {
+  .top {
+    background-size: 100%;
+  }
+}
+@media (min-width: 1240px) {
+  .top {
+    padding-block-end: 169px;
+  }
+}
+.top__pretitle {
+  font: 21px/1.5 "SuisseIntlMedium", "sans-serif";
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 24px;
+}
+.top__pretitle::before {
+  content: "";
+  background: url("/become-partner-for-vendor/images/icons/top-decoration-icon.png") center/contain no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-inline-end: 10px;
+}
+@media (min-width: 768px) {
+  .top__pretitle {
+    font-size: 28px;
+  }
+  .top__pretitle::before {
+    width: 29px;
+    height: 29px;
+    margin-inline-end: 15px;
+  }
+}
+@media (min-width: 1240px) {
+  .top__pretitle {
+    justify-content: flex-start;
+  }
+}
+.top__title {
+  font: 450 44px/1.15 "SuisseIntlRegular", "sans-serif";
+  text-align: center;
+  color: #FFFFFF;
+  margin-block-end: 26px;
+}
+@media (min-width: 768px) {
+  .top__title {
+    font-size: 56px;
+    letter-spacing: 0.4px;
+    margin-block-end: 23px;
+    max-width: 800px;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .top__title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1240px) {
+  .top__title {
+    text-align: left;
+    margin-inline-start: 0;
+    margin-block-end: 30px;
+    font-size: 64px;
+  }
+}
+.top__text {
+  font: 300 14px/1.44 "SuisseIntlLight", "sans-serif";
+  text-align: center;
+  color: #FFFFFF;
+  margin-block-end: 36px;
+}
+@media (min-width: 768px) {
+  .top__text {
+    font-size: 18px;
+    max-width: 654px;
+    margin-inline: auto;
+    margin-block-end: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .top__text {
+    margin-block-end: 38px;
+  }
+}
+@media (min-width: 1240px) {
+  .top__text {
+    text-align: left;
+    margin-inline-start: 0;
+    max-width: 860px;
+  }
+}
+.top__link {
+  transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  display: block;
+  max-width: 290px;
+  font: 400 18px/1 "SuisseIntlRegular", "sans-serif";
+  text-decoration: unset;
+  color: #2b2b2b;
+  background-color: #5ed76a;
+  border-radius: 15px;
+  padding-block: 23px;
+  padding-inline: 10px;
+  text-align: center;
+  margin-inline: auto;
+}
+.top__link:hover {
+  background-color: #68ee75;
+}
+@media (min-width: 1240px) {
+  .top__link {
+    margin-inline-start: 0;
+    max-width: 262px;
+  }
+}
+
+.benefits {
+  margin-block: 48px calc(-26.9vw + 457px);
+  position: relative;
+}
+@media (min-width: 768px) {
+  .benefits {
+    margin-block-end: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .benefits {
+    margin-block-end: 12px;
+  }
+}
+@media (min-width: 1240px) {
+  .benefits {
+    margin-block-end: -36px;
+  }
+}
+.benefits__items {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  border: 1px solid #DFDFDF;
+  border-radius: 30px;
+  top: calc(18.38vw - 441px);
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1215686275);
+  max-width: calc(100vw - 100px);
+}
+@media (min-width: 768px) {
+  .benefits__items {
+    position: relative;
+    top: -110px;
+    padding-block: 40px 52px;
+    padding-inline: 30px;
+    gap: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .benefits__items {
+    padding-block: 48px 57px;
+    padding-inline: 40px;
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1240px) {
+  .benefits__items {
+    top: -160px;
+    gap: 41px;
+    padding-inline: 66px 61px;
+  }
+}
+.benefits__icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-block-end: 14px;
+}
+.benefits__icon_bank {
+  background: url("../images/icons/bank.svg");
+}
+.benefits__icon_work {
+  background: url("../images/icons/work.svg");
+}
+.benefits__icon_decision {
+  background: url("../images/icons/decision.svg");
+}
+.benefits__title {
+  font: 600 20px/1.4 "SuisseIntlSemiBold", sans-serif;
+  color: #2b2b2b;
+  margin-block-end: 8px;
+}
+@media (min-width: 768px) {
+  .benefits__title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+.benefits__text {
+  font: 300 16px/1.5 "SuisseIntlLight", sans-serif;
+  color: #2b2b2b;
+}
+@media (min-width: 768px) {
+  .benefits__text {
+    font-size: 18px;
+  }
+}
+.benefits__item {
+  margin-block-end: 27px;
+}
+.benefits__item:last-child {
+  margin-block-end: 0;
+}
+@media (min-width: 768px) {
+  .benefits__item {
+    flex: 44% 1 1;
+    margin-block-end: 0;
+  }
+  .benefits__item:last-child {
+    flex: 100% 1 1;
+  }
+}
+@media (min-width: 1024px) {
+  .benefits__item {
+    flex: 33% 1 1;
+  }
+  .benefits__item:last-child {
+    flex: 33% 1 1;
+  }
+}
+
+.partner {
+  overflow: hidden;
+}
+.partner__title {
+  font: 450 34px/1.2 "SuisseIntlRegular", "sans-serif";
+  color: #2b2b2b;
+  margin-block-end: 24px;
+}
+@media (min-width: 768px) {
+  .partner__title {
+    font-size: 46px;
+  }
+}
+@media (min-width: 1024px) {
+  .partner__title {
+    font-size: 50px;
+    margin-block-end: 32px;
+  }
+}
+@media (min-width: 1240px) {
+  .partner__title {
+    font-size: 52px;
+    margin-block-end: 50px;
+  }
+}
+.partner__text {
+  font: 300 18px/1.44 "SuisseIntlLight", "sans-serif";
+  color: #2b2b2b;
+  margin-block-end: 24px;
+}
+@media (min-width: 768px) {
+  .partner__text {
+    margin-block-end: 42px;
+  }
+}
+@media (min-width: 1024px) {
+  .partner__text {
+    margin-block-end: 46px;
+  }
+}
+@media (min-width: 1240px) {
+  .partner__text {
+    margin-block-end: 62px;
+  }
+}
+.partner__brands-wrapper {
+  height: 56px;
+  position: relative;
+  margin-block-end: 33px;
+}
+@media (min-width: 768px) {
+  .partner__brands-wrapper {
+    height: 50px;
+    margin-block-end: 63px;
+  }
+}
+@media (min-width: 1024px) {
+  .partner__brands-wrapper {
+    height: 58px;
+    margin-block-end: 75px;
+  }
+}
+@media (min-width: 1240px) {
+  .partner__brands-wrapper {
+    margin-block-end: 90px;
+  }
+}
+.partner__brands {
+  -webkit-animation: scrollingReverse 80s linear infinite;
+  animation: scrollingReverse 80s linear infinite;
+  height: 56px;
+  position: absolute;
+  right: 0;
+  margin-inline: auto;
+  width: 992%;
+  background-image: url("/become-partner-for-vendor/images/backgrounds/brands.png");
+  background-size: contain;
+}
+@media (min-width: 768px) {
+  .partner__brands {
+    height: 50px;
+    -webkit-animation: scrollingReverse 180s linear infinite;
+    animation: scrollingReverse 180s linear infinite;
+  }
+}
+@media (min-width: 1024px) {
+  .partner__brands {
+    height: 58px;
+  }
+}
+@media (min-width: 1920px) {
+  .partner__brands {
+    -webkit-animation: scrollingReverse 300s linear infinite;
+    animation: scrollingReverse 300s linear infinite;
+  }
+}
+
+@keyframes scrollingReverse {
+  0% {
+    transform: translateX(10vw);
+  }
+  to {
+    transform: translateX(992vw);
+  }
+}
+.direction {
+  background-color: #f8f8f8;
+  padding-block: 44px 60px;
+}
+@media (min-width: 768px) {
+  .direction {
+    padding-block: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .direction {
+    padding-block: 80px;
+  }
+}
+.direction__header {
+  font: 450 34px/1.3 "SuisseIntlRegular", "sans-serif";
+  color: #2b2b2b;
+  margin-block-end: 20px;
+}
+@media (min-width: 768px) {
+  .direction__header {
+    font-size: 46px;
+    margin-block-end: 44px;
+    max-width: 760px;
+  }
+}
+@media (min-width: 1024px) {
+  .direction__header {
+    font-size: 50px;
+    margin-block-end: 50px;
+  }
+}
+@media (min-width: 1240px) {
+  .direction__header {
+    font-size: 52px;
+    max-width: unset;
+    margin-block-end: 50px;
+  }
+}
+.direction__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.direction__item {
+  padding: 36px;
+  border-radius: 18px;
+  border: 1px solid #D5D5D5;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .direction__item {
+    flex: 44% 1 1;
+  }
+}
+@media (min-width: 1024px) {
+  .direction__item {
+    flex: 30% 1 1;
+  }
+}
+@media (min-width: 1240px) {
+  .direction__item {
+    padding-inline-end: 30px;
+  }
+}
+.direction__title {
+  font: 20px/1.4 "SuisseIntlMedium", "sans-serif";
+  color: #2B2B2B;
+  margin-block-end: 13px;
+}
+.direction__title::before {
+  display: block;
+  content: "";
+  width: 36px;
+  height: 36px;
+  margin-block-end: 24px;
+}
+.direction__title_automation::before {
+  background: url("../images/icons/automation.svg");
+}
+.direction__title_digitalization::before {
+  background: url("../images/icons/digitalization.svg");
+}
+.direction__title_import-substitution::before {
+  background: url("../images/icons/import-substitution.svg");
+}
+.direction__title_ai::before {
+  background: url("../images/icons/ai.svg");
+}
+.direction__title_agricultural-automation::before {
+  background: url("../images/icons/agricultural-automation.svg");
+}
+.direction__title_elaboration::before {
+  background: url("../images/icons/elaboration.svg");
+}
+@media (min-width: 768px) {
+  .direction__title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+.direction__br {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .direction__br {
+    display: block;
+  }
+}
+@media (min-width: 1100px) {
+  .direction__br {
+    display: none;
+  }
+}
+.direction__text {
+  font: 16px/1.6 "SuisseIntlRegular", "sans-serif";
+  color: #2b2b2b;
+}
+@media (min-width: 768px) {
+  .direction__text {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+.projects {
+  background-color: #f8f8f8;
+  padding-block: 40px;
+}
+@media (min-width: 768px) {
+  .projects {
+    padding-block: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .projects {
+    padding-block: 80px;
+  }
+}
+@media (min-width: 1240px) {
+  .projects {
+    padding-block-end: 88px;
+  }
+}
+.projects__header {
+  font: 450 34px/1.3 "SuisseIntlRegular", "sans-serif";
+  color: #2b2b2b;
+  margin-block-end: 20px;
+}
+@media (min-width: 768px) {
+  .projects__header {
+    font-size: 46px;
+    margin-block-end: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .projects__header {
+    font-size: 50px;
+    letter-spacing: 0.4px;
+    margin-block-end: 50px;
+  }
+}
+@media (min-width: 1240px) {
+  .projects__header {
+    font-size: 52px;
+  }
+}
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.projects__item {
+  transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  display: block;
+  padding: 29px 25px;
+  border-radius: 18px;
+  border: 1px solid #D5D5D5;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+.projects__item:hover, .projects__item:active, .projects__item:focus {
+  background-color: #F3FDF3;
+}
+@media (min-width: 768px) {
+  .projects__item {
+    flex: 44% 1 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .projects__item {
+    flex: 30% 1 1;
+  }
+}
+@media (min-width: 1240px) {
+  .projects__item {
+    flex: 23% 1 1;
+  }
+}
+@media (min-width: 1240px) {
+  .projects__images-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
+.projects__text {
+  padding-block-start: 21px;
+  margin-block: 21px 52px;
+  border-top: 1px solid #DFDFDF;
+  font: 300 16px/1.4 "SuisseIntlLight", "sans-serif";
+  color: #2b2b2b;
+}
+@media (min-width: 768px) {
+  .projects__text {
+    font-size: 18px;
+  }
+}
+.projects__span {
+  font: 300 19px/1.4 "SuisseIntlLight", "sans-serif";
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #5ed76a;
+}
+@media (min-width: 768px) {
+  .projects__span {
+    margin-block-start: auto;
+  }
+}
+.projects__link {
+  transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  display: block;
+  margin-block-start: 36px;
+  max-width: 260px;
+  font: 18px/1.4 "SuisseIntlSemiBold", "sans-serif";
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #5ed76a;
+  padding: 19px;
+  border-radius: 15px;
+  text-align: center;
+  margin-inline: auto;
+}
+.projects__link:hover, .projects__link:active, .projects__link:focus {
+  background-color: #68ee75;
+}
+
+.cooperation {
+  padding-block: 40px;
+}
+@media (min-width: 768px) {
+  .cooperation {
+    padding-block: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .cooperation {
+    padding-block: 80px;
+  }
+}
+.cooperation__header {
+  font: 450 34px/1.2 "SuisseIntlRegular", "sans-serif";
+  color: #2b2b2b;
+  margin-block-end: 24px;
+}
+@media (min-width: 768px) {
+  .cooperation__header {
+    font-size: 46px;
+  }
+}
+@media (min-width: 1024px) {
+  .cooperation__header {
+    font-size: 50px;
+    margin-block-end: 50px;
+  }
+}
+@media (min-width: 1240px) {
+  .cooperation__header {
+    font-size: 58px;
+    margin-block-end: 24px;
+  }
+}
+.cooperation__subheader {
+  font: 300 18px/1.44 "SuisseIntlLight", "sans-serif";
+  color: #2b2b2b;
+  margin-block-end: 24px;
+}
+@media (min-width: 1240px) {
+  .cooperation__subheader {
+    margin-block-end: 58px;
+  }
+}
+.cooperation__list-card {
+  list-style: none;
+}
+@media (min-width: 1024px) {
+  .cooperation__list-card {
+    display: flex;
+    gap: 20px;
+  }
+}
+.cooperation__item {
+  padding: 36px;
+  border-radius: 30px;
+  border: 1px solid #DFDFDF;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1215686275);
+}
+.cooperation__item:first-child {
+  margin-block-end: 20px;
+}
+@media (min-width: 768px) {
+  .cooperation__item {
+    padding: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .cooperation__item:first-child {
+    margin-block-end: 0;
+  }
+}
+.cooperation__title {
+  font: 20px/1.4 "SuisseIntlMedium", "sans-serif";
+  color: #2b2b2b;
+  margin-block-end: 32px;
+}
+@media (min-width: 768px) {
+  .cooperation__title {
+    font-size: 28px;
+  }
+}
+.cooperation__list {
+  list-style: none;
+}
+.cooperation__text {
+  font: 300 16px/1.5 "SuisseIntlLight", "sans-serif";
+  padding-inline-start: 26px;
+  position: relative;
+}
+.cooperation__text::before {
+  left: 0;
+  top: 9px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 11px;
+  height: 22px;
+  background: url("/become-partner-for-vendor/images/icons/green-small-arrow.svg") no-repeat center/contain;
+}
+.cooperation__text:first-child {
+  margin-block-end: 20px;
+}
+@media (min-width: 768px) {
+  .cooperation__text {
+    font-size: 22px;
+  }
+}
+.cooperation__highlight {
+  font-family: "SuisseIntlMedium", sans-serif;
+}
+
+.our-partners {
+  padding-block: 40px;
+}
+@media (min-width: 768px) {
+  .our-partners {
+    padding-block: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .our-partners {
+    padding-block: 80px;
+  }
+}
+@media (min-width: 1240px) {
+  .our-partners {
+    padding-block: 90px;
+  }
+}
+.our-partners__header {
+  font: 450 34px/1.3 "SuisseIntlRegular", sans-serif;
+  color: #2b2b2b;
+  margin-block-end: 24px;
+}
+@media (min-width: 768px) {
+  .our-partners__header {
+    font-size: 46px;
+  }
+}
+@media (min-width: 1024px) {
+  .our-partners__header {
+    font-size: 50px;
+    margin-block-end: 40px;
+  }
+}
+@media (min-width: 1240px) {
+  .our-partners__header {
+    font-size: 52px;
+    margin-block-end: 34px;
+  }
+}
+.our-partners__text {
+  font: 300 18px/1.3 "SuisseIntlLight", sans-serif;
+  color: #2b2b2b;
+  margin-block-end: 24px;
+}
+@media (min-width: 1240px) {
+  .our-partners__text {
+    line-height: 1.5;
+    margin-block-end: 52px;
+  }
+}
+.our-partners__button-wrapper {
+  margin-block-end: 36px;
+}
+.our-partners__button {
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  padding-inline: 18px;
+  padding-block: 7px;
+  font: 400 18px/1.3 "SuisseIntlRegular", sans-serif;
+  border: 1px solid #2b2b2b;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.our-partners__button:first-child {
+  margin-block-end: 8px;
+}
+.our-partners__button:hover, .our-partners__button:active, .our-partners__button:focus {
+  color: #FFFFFF;
+  background-color: #2b2b2b;
+}
+.our-partners__button.select {
+  color: #FFFFFF;
+  background-color: #2b2b2b;
+}
+.our-partners__equipment, .our-partners__software {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px 8px;
+}
+@media (min-width: 1024px) {
+  .our-partners__equipment, .our-partners__software {
+    column-gap: 15px;
+  }
+}
+.our-partners__card {
+  display: flex;
+  box-sizing: border-box;
+  width: 320px;
+  height: 150px;
+  border: 2px solid #f1f1f1;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .our-partners__card {
+    width: 221px;
+    height: 150px;
+  }
+}
+@media (min-width: 1240px) {
+  .our-partners__card {
+    width: 285px;
+    height: 150px;
+  }
+}
+.our-partners__open-button {
+  transition: background-color 0.3s ease-in-out;
+  font: 18px/1.4 "SuisseIntlSemiBold", "sans-serif";
+  display: block;
+  max-width: 310px;
+  background-color: #5ed76a;
+  color: #FFFFFF;
+  padding: 18px;
+  border-radius: 15px;
+  border: unset;
+  width: 100%;
+  margin-block-start: 64px;
+  margin-inline: auto;
+  cursor: pointer;
+}
+.our-partners__open-button:before, .our-partners__open-button:active, .our-partners__open-button:focus {
+  background-color: #68ee75;
+}
+@media (min-width: 1240px) {
+  .our-partners__open-button {
+    margin-block-start: 80px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.partners-program {
+  background: #2b2b2b url("/become-partner-for-vendor/images/backgrounds/partner-progran-background-mobile.png") no-repeat right bottom/288px 166px;
+  padding-block: 40px 156px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .partners-program {
+    padding-block: 68px 60px;
+    background-size: 360px 208px;
+  }
+}
+@media (min-width: 1024px) {
+  .partners-program {
+    padding-block: 84px 50px;
+    background: #2b2b2b url("/become-partner-for-vendor/images/backgrounds/partner-progran-background-desktop.png") -70px 100%/clamp(400px, 34vw, 556px) auto no-repeat;
+  }
+}
+@media (min-width: 1240px) {
+  .partners-program {
+    background-position: 0 100%;
+    padding-block-end: 62px;
+  }
+}
+@media (min-width: 1024px) {
+  .partners-program__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1240px) {
+  .partners-program__container {
+    justify-content: flex-start;
+  }
+}
+.partners-program__header {
+  font: 450 35px/1.2 "SuisseIntlRegular", sans-serif;
+  color: #FFFFFF;
+  margin-block-end: 100px;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .partners-program__header {
+    max-width: 500px;
+    font-size: 52px;
+    letter-spacing: 0.9px;
+    line-height: 1.15;
+    margin-block-end: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .partners-program__header {
+    max-width: 340px;
+    margin-inline-end: 20px;
+  }
+}
+@media (min-width: 1240px) {
+  .partners-program__header {
+    max-width: 405px;
+    margin-inline-end: 20px;
+  }
+}
+.partners-program__list {
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .partners-program__list {
+    position: relative;
+  }
+  .partners-program__list::before {
+    position: absolute;
+    content: "";
+    background: url("/become-partner-for-vendor/images/backgrounds/partner-program-decoration-table.svg") no-repeat;
+    display: block;
+    width: 48px;
+    height: 660px;
+  }
+}
+@media (min-width: 1024px) {
+  .partners-program__list::before {
+    background: url("/become-partner-for-vendor/images/backgrounds/partner-program-decoration-table-large.svg") no-repeat;
+    height: 710px;
+  }
+}
+@media (min-width: 1240px) {
+  .partners-program__list::before {
+    background: url("/become-partner-for-vendor/images/backgrounds/partner-program-decoration-desktop.svg") no-repeat;
+    height: 710px;
+  }
+}
+.partners-program__list-item {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .partners-program__list-item {
+    position: relative;
+    padding-inline-start: 83px;
+  }
+}
+.partners-program__index {
+  font: 600 18px/1 "SuisseIntlSemiBold", sans-serif;
+  padding-block: 17px;
+  padding-inline: 6px;
+  color: #FFFFFF;
+  margin-inline-end: 21px;
+  border: 3px solid #5ed76a;
+  border-radius: 30px;
+  min-width: 41px;
+  max-width: 41px;
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+}
+.partners-program__index_last {
+  top: 0;
+}
+@media (min-width: 768px) {
+  .partners-program__index {
+    left: 4px;
+    border: unset;
+    margin-inline-end: 42px;
+    position: absolute;
+    padding: unset;
+    top: 22px;
+  }
+  .partners-program__index_last {
+    top: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .partners-program__index_last {
+    top: 20px;
+  }
+}
+@media (min-width: 1240px) {
+  .partners-program__index {
+    top: 30px;
+  }
+  .partners-program__index_last {
+    top: 20px;
+  }
+}
+.partners-program__text-wrapper {
+  padding-block: 12px 15px;
+  box-sizing: border-box;
+  flex: 263px 1;
+}
+@media (min-width: 768px) {
+  .partners-program__text-wrapper {
+    padding-block: 10px 49px;
+  }
+}
+@media (min-width: 1024px) {
+  .partners-program__text-wrapper {
+    padding-block: 20px 40px;
+    max-width: 543px;
+  }
+  .partners-program__text-wrapper_first {
+    padding-block-end: 12px;
+  }
+  .partners-program__text-wrapper_second {
+    padding-block-end: 64px;
+  }
+}
+@media (min-width: 1240px) {
+  .partners-program__text-wrapper {
+    max-width: 671px;
+  }
+  .partners-program__text-wrapper_first {
+    padding-block-end: 32px;
+  }
+  .partners-program__text-wrapper_second {
+    padding-block-end: 38px;
+  }
+}
+.partners-program__title {
+  font: 600 24px/1.3 "SuisseIntlSemiBold", sans-serif;
+  margin-block-end: 6px;
+  color: #FFFFFF;
+}
+.partners-program__text {
+  font: 300 18px/1.4 "SuisseIntlLight", sans-serif;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .partners-program__text {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1240px) {
+  .partners-program__text {
+    max-width: 660px;
+  }
+}
+.partners-program__link {
+  font: 300 18px/1.4 "SuisseIntlLight", sans-serif;
+  color: #FFFFFF;
+  text-underline-offset: 4px;
+}
+
+.work {
+  padding-block: 40px;
+  box-sizing: border-box;
+  background-color: #F8F8F8;
+}
+@media (min-width: 768px) {
+  .work {
+    padding-block: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .work {
+    padding-block: 80px;
+  }
+}
+@media (min-width: 1240px) {
+  .work {
+    background-color: #FFFFFF;
+    padding-block: 95px;
+  }
+}
+.work__header {
+  font: 450 34px/1.3 "SuisseIntlRegular", sans-serif;
+  margin-block-end: 18px;
+  color: #2b2b2b;
+}
+@media (min-width: 768px) {
+  .work__header {
+    font-size: 46px;
+    margin-block-end: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .work__header {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1240px) {
+  .work__header {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+}
+.work__subheader {
+  font: 300 18px/1 "SuisseIntlLight", sans-serif;
+  margin-block-end: 23px;
+  color: #2b2b2b;
+}
+.work__card-wrapper {
+  list-style: none;
+  box-sizing: border-box;
+}
+.work__card {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-block: 42px 39px;
+  padding-inline: 16px 23px;
+  border: 1px solid #DFDFDF;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1215686275);
+  margin-block-end: 20px;
+}
+.work__card:last-child {
+  margin-block-end: unset;
+}
+@media (min-width: 768px) {
+  .work__card {
+    border-radius: 30px;
+    padding-block: 42px;
+    padding-inline: 40px;
+  }
+}
+.work__title {
+  font: 600 20px/1.4 "SuisseIntlSemiBold", sans-serif;
+  margin-block-end: 10px;
+  color: #2b2b2b;
+  position: relative;
+}
+.work__title::before {
+  content: "";
+  position: absolute;
+  background: url("/become-partner-for-vendor/images/icons/work-card-decoration.svg") no-repeat;
+  left: -18px;
+  top: -2px;
+  width: 6px;
+  height: 36px;
+}
+@media (min-width: 768px) {
+  .work__title {
+    font-size: 24px;
+    line-height: 1.29;
+  }
+  .work__title::before {
+    left: -40px;
+  }
+}
+@media (min-width: 1240px) {
+  .work__title::before {
+    left: -42px;
+  }
+}
+.work__list {
+  padding-inline-start: 22px;
+  list-style-type: disc;
+}
+@media (min-width: 768px) {
+  .work__list {
+    padding-inline-start: 30px;
+  }
+}
+.work__item {
+  font: 300 16px/1.55 "SuisseIntlLight", sans-serif;
+  color: #2b2b2b;
+  margin-block-end: 4px;
+}
+@media (min-width: 768px) {
+  .work__item {
+    font-size: 18px;
+    margin-block-end: 0;
+  }
+}
+@media (min-width: 1240px) {
+  .work__item {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .work__container {
+    display: flex;
+  }
+  .work__header-wrapper {
+    max-width: 390px;
+    margin-inline-end: 70px;
+  }
+  .work__card {
+    padding-block: 42px 45px;
+    padding-inline: 42px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .work__header-wrapper {
+    max-width: 420px;
+  }
+}
+.container {
+  box-sizing: border-box;
+  max-width: clamp(360px, 100%, 1240px);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.feedback {
+  background-color: #f8f8f8;
+  padding-block-start: 73px;
+}
+@media (min-width: 768px) {
+  .feedback {
+    padding-block-start: 80px;
+  }
+}
+@media (min-width: 1240px) {
+  .feedback {
+    padding-block-start: 90px;
+    background-color: unset;
+  }
+}
+.feedback__container {
+  padding-inline: unset;
+}
+@media (min-width: 768px) {
+  .feedback__container {
+    padding-inline: 20px;
+  }
+}
+@media (min-width: 1240px) {
+  .feedback__container {
+    display: flex;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    max-width: clamp(360px, 100%, 1200px);
+    padding-block: 57px 52px;
+    padding-inline: 59px 94px;
+    border-radius: 30px;
+  }
+}
+.feedback__person {
+  display: flex;
+  align-items: center;
+  margin-block-end: 34px;
+}
+@media (min-width: 768px) {
+  .feedback__person {
+    margin-inline-start: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .feedback__person {
+    margin-inline-start: 0;
+  }
+}
+@media (min-width: 1240px) {
+  .feedback__person {
+    margin-inline-start: 0;
+    margin-block-end: 16px;
+  }
+}
+.feedback__picture {
+  margin-inline-end: 30px;
+}
+.feedback__name {
+  max-width: 100px;
+  font: 600 24px/1.4 "SuisseIntlSemiBold", sans-serif;
+  color: #2b2b2b;
+}
+@media (min-width: 768px) {
+  .feedback__name {
+    max-width: 300px;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+}
+.feedback__info {
+  margin-block-end: 34px;
+  padding-inline: 20px;
+}
+@media (min-width: 768px) {
+  .feedback__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .feedback__info {
+    max-width: clamp(360px, 100%, 740px);
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .feedback__info {
+    max-width: 340px;
+  }
+}
+@media (min-width: 1240px) {
+  .feedback__info {
+    flex-direction: column;
+    justify-content: unset;
+    order: 1;
+    padding-inline: 0;
+    flex-basis: 293px;
+  }
+}
+.feedback__text {
+  font: 300 18px/1.3 "SuisseIntlLight", sans-serif;
+  color: #2b2b2b;
+  margin-block-end: 24px;
+}
+@media (min-width: 1240px) {
+  .feedback__text {
+    max-width: 520px;
+  }
+}
+@media (min-width: 768px) {
+  .feedback__link-wrapper {
+    max-width: 245px;
+    margin-inline-end: 18px;
+  }
+}
+@media (min-width: 1240px) {
+  .feedback__link-wrapper {
+    max-width: unset;
+    margin-inline-end: unset;
+  }
+}
+.feedback__link {
+  display: block;
+  font: 600 18px/1 "SuisseIntlBlod", sans-serif;
+  color: #2b2b2b;
+  text-decoration: none;
+  margin-block-end: 16px;
+}
+.feedback__link:last-child {
+  margin-block-end: 8px;
+}
+.feedback__link_underline {
+  font: 300 18px/1 "SuisseIntlLight", sans-serif;
+  color: #2b2b2b;
+  text-decoration: underline;
+  margin-block-end: 12px;
+}
+@media (min-width: 768px) {
+  .feedback__link_underline {
+    margin-block-end: 18px;
+  }
+}
+.feedback__form-wrapper {
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-block-start: 41px;
+  max-width: clamp(360px, 100%, 1240px);
+  padding-inline: 20px;
+}
+@media (min-width: 768px) {
+  .feedback__form-wrapper {
+    padding-block: 50px;
+    padding-inline: 49px;
+    border: 1px solid #DFDFDF;
+  }
+}
+@media (min-width: 1024px) {
+  .feedback__form-wrapper {
+    max-width: clamp(360px, 100%, 740px);
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1240px) {
+  .feedback__form-wrapper {
+    max-width: 712px;
+    width: 100%;
+    flex-basis: 600px;
+    flex-grow: 1;
+    margin-inline-end: 42px;
+  }
+}
+.feedback__title {
+  font: 600 24px/1 "SuisseIntlSemiBold", sans-serif;
+  margin-block-end: 22px;
+}
+@media (min-width: 768px) {
+  .feedback__title {
+    margin-block-end: 13px;
+  }
+}
+.feedback__form {
+  min-height: 355px;
+  background-color: gray;
+}
+
+/*# sourceMappingURL=index.css.map */

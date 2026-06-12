@@ -1,0 +1,153 @@
+.work {
+  padding-block: 40px;
+  box-sizing: border-box;
+  background-color: #F8F8F8;
+
+  @media (min-width: 768px) {
+    padding-block: 60px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-block: 80px;
+  }
+
+  @media (min-width: 1240px) {
+    background-color: #FFFFFF;
+    padding-block: 95px;
+  }
+
+  &__header {
+    font: 450 34px/1.3 'SuisseIntlRegular', sans-serif;
+    margin-block-end: 18px;
+    color: $title-color;
+
+    @media (min-width: 768px) {
+      font-size: 46px;
+      margin-block-end: 50px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 50px;
+    }
+
+    @media (min-width: 1240px) {
+      font-size: 52px;
+      line-height: 1.1;
+    }
+  }
+
+  &__subheader {
+    font: 300 18px/1 'SuisseIntlLight', sans-serif;
+    margin-block-end: 23px;
+    color: $text-color;
+  }
+
+  &__card-wrapper {
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  &__card {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-block: 42px 39px;
+    padding-inline: 16px 23px;
+    border: 1px solid #DFDFDF;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 #0000001F;
+    margin-block-end: 20px;
+
+    &:last-child {
+      margin-block-end: unset;
+    }
+
+    @media (min-width: 768px) {
+      border-radius: 30px;
+      padding-block: 42px;
+      padding-inline: 40px;
+    }
+  }
+
+  &__title {
+    font: 600 20px/1.4 'SuisseIntlSemiBold', sans-serif;
+    margin-block-end: 10px;
+    color: $title-color;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('/become-partner-for-vendor/images/icons/work-card-decoration.svg') no-repeat;
+      left: -18px;
+      top: -2px;
+      width: 6px;
+      height: 36px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 1.29;
+
+      &::before {
+        left: -40px;
+      }
+    }
+
+    @media (min-width: 1240px) {
+      &::before {
+        left: -42px;
+      }
+    }
+  }
+
+  &__list {
+    padding-inline-start: 22px;
+    list-style-type: disc;
+
+    @media (min-width: 768px) {
+      padding-inline-start: 30px;
+    }
+  }
+
+  &__item {
+    font: 300 16px/1.55 'SuisseIntlLight', sans-serif;
+    color: $text-color;
+    margin-block-end: 4px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      margin-block-end: 0;
+    }
+
+    @media (min-width: 1240px) {
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .work {
+    &__container {
+      display: flex;
+    }
+
+    &__header-wrapper {
+      max-width: 390px;
+      margin-inline-end: 70px;
+    }
+
+    &__card {
+      padding-block: 42px 45px;
+      padding-inline: 42px;
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .work {
+    &__header-wrapper {
+      max-width: 420px;
+    }
+  }
+}
